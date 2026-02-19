@@ -7,8 +7,6 @@ class Solution:
             temp=res[-1]
             ans=[0]*(len(temp)+1)
             for j in range(len(temp)):
-                # ans[j]+= ans[(poured-1)/2]
-                # ans[j+1]+=ans[(poured-1)/2]
                 if (temp[j]-1)/2>=0:
                     ans[j]+=(temp[j]-1)/2
                     ans[j+1]+=(temp[j]-1)/2
